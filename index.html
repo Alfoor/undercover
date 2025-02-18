@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undercover Toast - The Board Game</title>
+  <style>
+    /* Reset & base styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Header styles */
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    /* Container */
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      padding: 20px 0;
+    }
+    /* Hero section */
+    .hero {
+      background: url('https://via.placeholder.com/1200x300?text=Undercover+Toast') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .hero h1 {
+      font-size: 3em;
+      text-align: center;
+    }
+    .btn {
+      display: inline-block;
+      background: #e67e22;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    /* Sections */
+    section {
+      padding: 20px 0;
+      border-bottom: 1px solid #ccc;
+    }
+    section h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    section p,
+    section ul {
+      margin-bottom: 15px;
+    }
+    section ul li {
+      margin: 5px 0;
+    }
+    /* Gallery styling */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .gallery img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+    }
+    /* Contact form */
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      margin-top: 10px;
+      cursor: pointer;
+      border: none;
+    }
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .hero {
+        height: 200px;
+      }
+      .hero h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Undercover Toast</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gameplay">Gameplay</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Uncover the Mystery, Toast the Truth</h1>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Undercover Toast</h2>
+      <p>
+        Welcome to <strong>Undercover Toast</strong>, the board game where secrets are revealed and every slice of toast tells a story. Dive into a whimsical world of intrigue, strategy, and a touch of humor as you take on the role of a secret agent in pursuit of hidden truths.
+      </p>
+    </section>
+
+    <!-- Gameplay Section -->
+    <section id="gameplay">
+      <h2>Gameplay</h2>
+      <p>
+        Undercover Toast is a blend of strategy, bluffing, and wit. In each round, players navigate twists, decipher hidden clues, and outsmart their opponents. Whether you're a seasoned board gamer or just looking for a fun new challenge, Undercover Toast promises hours of excitement.
+      </p>
+      <ul>
+        <li>2-6 Players</li>
+        <li>Approx. 60 minutes per game</li>
+        <li>Easy to learn, but challenging to master!</li>
+      </ul>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p>Take a peek at our game art and moments from lively game nights:</p>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/150" alt="Game Snapshot 1" />
+        <img src="https://via.placeholder.com/150" alt="Game Snapshot 2" />
+        <img src="https://via.placeholder.com/150" alt="Game Snapshot 3" />
+        <img src="https://via.placeholder.com/150" alt="Game Snapshot 4" />
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Questions or feedback? Get in touch!</p>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Undercover Toast. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
