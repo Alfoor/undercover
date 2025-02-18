@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header and Navigation -->
+  <!-- Navigation -->
   <header>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
       <div class="logo">Undercover Toast</div>
       <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
@@ -21,16 +21,24 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-      <div class="hero-content">
-        <h1>Undercover Toast</h1>
-        <p>The ultimate board game of deception and strategy.</p>
-        <a href="#about" class="btn">Learn More</a>
-      </div>
-    </section>
   </header>
+
+  <!-- Hero Section with Video Background -->
+  <section id="hero" class="hero-section">
+    <!-- Video background -->
+    <video autoplay muted loop id="hero-video">
+      <!-- Replace with your own video file for best effect -->
+      <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <!-- Overlay for darkening the video -->
+    <div class="video-overlay"></div>
+    <div class="hero-content">
+      <h1 class="animate-fadein">Undercover Toast</h1>
+      <p class="animate-fadein-delay">A board game of mystery, strategy, and secret identities.</p>
+      <a href="#about" class="btn animate-slideup">Learn More</a>
+    </div>
+  </section>
 
   <!-- Main Content -->
   <main>
@@ -39,9 +47,9 @@
       <div class="container">
         <h2>About the Game</h2>
         <p>
-          Undercover Toast is a thrilling board game where strategy meets mystery.
-          Players take on secret roles and navigate a game of hidden objectives and playful betrayal.
-          Will you uncover the truth, or will you be toast?
+          Undercover Toast plunges you into a world of hidden identities and clever strategies.
+          Assume a secret role, gather clues, and outsmart your opponents in a battle of wits.
+          Uncover the truth before you become toast!
         </p>
       </div>
     </section>
@@ -51,12 +59,12 @@
       <div class="container">
         <h2>How to Play</h2>
         <ol>
-          <li>Each player receives a secret role card.</li>
-          <li>Navigate through rounds of challenges and debates.</li>
-          <li>Collect clues and try to unmask the undercover traitors.</li>
-          <li>The game ends when objectives are met or when the undercover players are revealed.</li>
+          <li>Each player is dealt a secret role card.</li>
+          <li>Engage in rounds of challenges, debates, and secret maneuvers.</li>
+          <li>Gather clues and deduce who is undercover.</li>
+          <li>The game ends when objectives are met or the traitors are exposed.</li>
         </ol>
-        <p>Strategy, negotiation, and a bit of luck are key to victory!</p>
+        <p>Strategy, deception, and a pinch of luck make every game unique!</p>
       </div>
     </section>
 
@@ -66,16 +74,16 @@
         <h2>Gallery</h2>
         <div class="gallery-grid">
           <div class="gallery-item">
-            <img src="https://via.placeholder.com/300x200?text=Game+Setup" alt="Game Setup" />
+            <img src="https://via.placeholder.com/500x300?text=Game+Setup" alt="Game Setup" />
           </div>
           <div class="gallery-item">
-            <img src="https://via.placeholder.com/300x200?text=Game+Play" alt="Game Play" />
+            <img src="https://via.placeholder.com/500x300?text=Intense+Moments" alt="Intense Moments" />
           </div>
           <div class="gallery-item">
-            <img src="https://via.placeholder.com/300x200?text=Game+Components" alt="Game Components" />
+            <img src="https://via.placeholder.com/500x300?text=Secret+Roles" alt="Secret Roles" />
           </div>
           <div class="gallery-item">
-            <img src="https://via.placeholder.com/300x200?text=Players" alt="Players enjoying the game" />
+            <img src="https://via.placeholder.com/500x300?text=Players" alt="Players enjoying the game" />
           </div>
         </div>
       </div>
@@ -86,7 +94,7 @@
       <div class="container">
         <h2>Contact &amp; Social</h2>
         <p>
-          Have questions or want to get in touch? Reach out to us or follow us on social media:
+          Questions? Suggestions? Get in touch or follow us on social media:
         </p>
         <ul class="social-links">
           <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
