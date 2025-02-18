@@ -218,6 +218,7 @@
     text-align: center;
   }
   .game-details-section .game-info ul li {
+    margin: 1rem 0;
     font-size: 1rem;
     text-align: center;
   }
