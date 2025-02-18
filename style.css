@@ -203,6 +203,7 @@
   .game-details-section .game-info {
     flex: 1 1 50%;
     text-align: left;
+    text-align: center;
   }
   .game-details-section .game-info h2 {
     margin-bottom: 1rem;
@@ -211,10 +212,18 @@
     list-style: none;
     padding: 0;
     margin: 1rem 0;
+    text-align: center;
   }
   .game-details-section .game-info ul li {
     margin-bottom: 0.5rem;
     font-size: 1rem;
+  }
+  .game-callout-section .container {
+    text-align: center;
+  }
+  .game-details-section .game-info a.btn {
+    display: inline-block; /* Make sure buttons respect margin settings */
+    margin: 0 10px;        /* Adds spacing between the buttons */
   }
   
   /* Footer */
