@@ -81,7 +81,7 @@
   /* Hero Section */
   .hero-section {
     position: relative;
-    height: 70vh;  /* Adjust this value as needed */
+    height: 100vh;  /* Adjust this value as needed */
     overflow: hidden;
   }
   
