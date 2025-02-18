@@ -6,17 +6,27 @@ document.addEventListener("DOMContentLoaded", function() {
       transitionEl.classList.remove("active");
     }, 100);
   
-    // Page transitions for internal links
-    document.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", function(e) {
-        const href = this.getAttribute("href");
-        if (href && href.endsWith(".html")) {
-          e.preventDefault();
-          transitionEl.classList.add("active");
-          setTimeout(() => {
-            window.location.href = href;
-          }, 500); // Duration matches CSS transition
+    // Smooth scroll for in-page anchor links (e.g., #about)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href");
+        const targetEl = document.querySelector(targetId);
+        if (targetEl) {
+          targetEl.scrollIntoView({ behavior: "smooth" });
         }
+      });
+    });
+  
+    // Page transitions for internal .html links
+    document.querySelectorAll('a[href$=".html"]').forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+        transitionEl.classList.add("active");
+        setTimeout(() => {
+          window.location.href = href;
+        }, 500); // Duration matches CSS transition
       });
     });
   
