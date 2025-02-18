@@ -52,7 +52,7 @@
   }
   .navbar.scrolled {
     background: #f4f1ed;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   .logo a {
     font-size: 1.8rem;
@@ -84,7 +84,6 @@
     height: 100vh;
     overflow: hidden;
   }
-  
   #hero-video {
     position: absolute;
     top: 50%;
@@ -98,18 +97,17 @@
     filter: brightness(0.7);
     object-fit: cover;
   }
-  
   .video-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     z-index: 2;
   }
   
-  /* Updated hero content overlay */
+  /* Hero Content Overlay */
   .hero-content {
     position: absolute;
     top: 50%;
@@ -178,11 +176,17 @@
     color: #8c6a43;
     margin-bottom: 2rem;
   }
-  .section p, .section ul {
+  .section p,
+  .section ul {
     max-width: 800px;
     margin: 0 auto 1rem;
     text-align: center;
     font-size: 1.1rem;
+  }
+  
+  /* Blended About & Call-to-Action Section */
+  .blended-section .container {
+    text-align: center;
   }
   
   /* Game Details Section */
@@ -198,7 +202,7 @@
   .game-details-section .game-cover img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   .game-details-section .game-info {
     flex: 1 1 50%;
@@ -214,19 +218,12 @@
     text-align: center;
   }
   .game-details-section .game-info ul li {
-    margin: 1rem 0;
+    margin: 0.5rem auto;
     font-size: 1rem;
     text-align: center;
   }
-  .game-callout-section .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .game-details-section .game-info a.btn {
-    display: inline-block; /* Make sure buttons respect margin settings */
-    margin: 0 10px;        /* Adds spacing between the buttons */
-    text-align: center;
+    margin: 0 10px;
   }
   
   /* Footer */

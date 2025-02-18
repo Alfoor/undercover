@@ -1,84 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Undercover Toast - Home</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Lora:400,400i,700,700i" rel="stylesheet" />
-</head>
-<body>
-  <!-- Page Transition Overlay -->
-  <div id="page-transition" class="page-transition"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Undercover Toast - Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Lora:400,400i,700,700i"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Page Transition Overlay -->
+    <div id="page-transition" class="page-transition"></div>
 
-  <!-- Navigation -->
-  <header>
-    <nav class="navbar" id="navbar">
-      <div class="logo"><a href="index.html">Undercover Toast</a></div>
-      <ul class="nav-links">
-        <li><a href="game.html">Games</a></li>
-        <li><a href="online.html">Play Online</a></li>
-        <li><a href="learn.html">Learn</a></li>
-        <li><a href="blog.html">Events &amp; News</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="community.html">Community</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar" id="navbar">
+        <div class="logo">
+          <a href="index.html">Undercover Toast</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="game.html">Games</a></li>
+          <li><a href="online.html">Play Online</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="blog.html">Events &amp; News</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero-section">
-    <!-- Video background -->
-    <video autoplay muted loop id="hero-video">
-      <source src="videos/myvideo.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-    <!-- Overlay for darkening the video -->
-    <div class="video-overlay"></div>
-    <!-- Hero Content (overlaid) -->
-    <div class="hero-content">
-      <h1 class="animate-fadein">Undercover Toast</h1>
-      <p class="animate-fadein-delay">A board game of mystery, strategy, and secret identities.</p>
-      <a href="#about" class="btn animate-slideup">Learn More</a>
-    </div>
-  </section>
-
-  <main>
-    <!-- About Section (with id for smooth scrolling) -->
-    <section id="about" class="section intro-section">
-      <div class="container">
-        <h2>Welcome to Undercover Toast</h2>
-        <p>
-          Step into a world of mystery, strategy, and hidden roles. Explore our site to learn more about the game, join online play, participate in community events, and shop exclusive merchandise.
-        </p>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <video autoplay muted loop id="hero-video">
+        <source src="videos/myvideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-overlay"></div>
+      <div class="hero-content">
+        <h1>Undercover Toast</h1>
+        <p>A board game of mystery, strategy, and secret identities.</p>
+        <a href="#about" class="btn">Learn More</a>
       </div>
     </section>
 
-    <!-- New Call-to-Action Section for "Discover the Game" -->
-    <section class="section game-callout-section">
+    <main>
+      <!-- Blended About / Call-to-Action Section -->
+      <section id="about" class="section blended-section">
+        <div class="container">
+          <h2>Welcome to Undercover Toast</h2>
+          <p>
+            Step into a world of mystery, strategy, and hidden roles. Explore our site
+            to learn more about the game, join online play, participate in community
+            events, and shop exclusive merchandise.
+          </p>
+          <p>
+            Discover our unique board game experience that challenges your wit and
+            strategy.
+          </p>
+          <a href="game.html" class="btn">Discover the Game</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
       <div class="container">
-        <h2>Discover the Game</h2>
-        <p>Learn more about our unique board game experience that challenges your wit and strategy.</p>
-        <a href="game.html" class="btn">Discover the Game</a>
+        <p>&copy; 2025 Undercover Toast. All Rights Reserved.</p>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social-links">
+          <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        </div>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Undercover Toast. All Rights Reserved.</p>
-      <ul class="footer-links">
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms of Use</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="social-links">
-        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
