@@ -217,6 +217,7 @@
   .game-details-section .game-info ul li {
     margin-bottom: 0.5rem;
     font-size: 1rem;
+    text-align: center;
   }
   .game-callout-section .container {
     text-align: center;
@@ -224,6 +225,7 @@
   .game-details-section .game-info a.btn {
     display: inline-block; /* Make sure buttons respect margin settings */
     margin: 0 10px;        /* Adds spacing between the buttons */
+    text-align: center;
   }
   
   /* Footer */
