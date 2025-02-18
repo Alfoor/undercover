@@ -1,23 +1,33 @@
-// Smooth scroll for in-page navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const targetElement = document.querySelector(this.getAttribute("href"));
-      if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: "smooth"
-        });
+document.addEventListener("DOMContentLoaded", function() {
+    const transitionEl = document.getElementById("page-transition");
+  
+    // Remove transition overlay on load
+    setTimeout(() => {
+      transitionEl.classList.remove("active");
+    }, 100);
+  
+    // Page transitions for internal links
+    document.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", function(e) {
+        const href = this.getAttribute("href");
+        if (href && href.endsWith(".html")) {
+          e.preventDefault();
+          transitionEl.classList.add("active");
+          setTimeout(() => {
+            window.location.href = href;
+          }, 500); // Duration matches CSS transition
+        }
+      });
+    });
+  
+    // Navbar scroll effect
+    const navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
       }
     });
-  });
-  
-  // Change navbar style on scroll
-  window.addEventListener('scroll', () => {
-    const navbar = document.getElementById('navbar');
-    if (window.scrollY > 50) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
   });
   
